@@ -1,0 +1,1 @@
+import{j as n}from"./app-BnetCg_w.js";import{T as s}from"./Tabla-DaXZFLPJ.js";import{L as t}from"./Layout-ClDJC_KU.js";import"./sweetalert2.all-B0pQRegE.js";function p({tabla:o,campos:r,filas:e}){return console.log(`nombre de tabla ${o}`),console.log(`Campos  ${r}`),console.log(`Filas  ${e}`),n.jsx(t,{children:n.jsx(s,{campos:r,filas:e,nombre:o})})}export{p as default};

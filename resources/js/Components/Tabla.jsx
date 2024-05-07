@@ -90,7 +90,7 @@ export default function Tabla({nombre, campos, filas, crud=true}) {
                 <div className="flex flex-row">
 
                     <h1 className="text-4xl text-green-700 ,t-4"> Listado de {nombre}</h1>
-                    {crud&& (<button onClick={handlenuevaFila} className="btn btn-sm btn-primary m-2">Nuevo {nombre}</button>)}
+                    {crud && (<button onClick={handlenuevaFila} className="btn btn-sm btn-primary m-2">Nuevo {nombre}</button>)}
                 </div>
                 <div className="overflow-x-auto h-full">
                     <table className="table table-auto table-xs table-pin-rows table-pin-cols">

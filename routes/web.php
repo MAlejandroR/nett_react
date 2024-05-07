@@ -10,10 +10,8 @@ Route::get("/", function(){
     return Inertia::render("Index");
 
 });
-Route::get("OpcionesDatosApi", [ApiDataController::class,'index'])->name("DatosApi");
-Route::get("GetImages", [ApiDataController::class,'get_imagenes'])->name("GetImages");
-Route::get("films", [ApiDataController::class,'get_films'])->name("films");
-Route::get("usersGit", \App\Http\Controllers\GitController::class)->name("git_users");
+Route::get("DatosApi", [ApiDataController::class, "index"])->name("DatosApi");
+Route::get("getFilms", [ApiDataController::class, "get_films"])->name("films");
 Route::resource("alumnos", \App\Http\Controllers\AlumnoController::class);
 Route::resource("proyectos", \App\Http\Controllers\ProyectoController::class);
 //Route::get('/', function () {
